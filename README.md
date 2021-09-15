@@ -28,6 +28,10 @@ The backend will be serving requests from [localhost][], port 3000. You can
 visit [this link][getrecipes] in your browser to verify that it is up and
 running correctly.
 
+When building a mobile app client, the backend url will be the IP address
+of the hosting computer. When the phone is connected to the same network,
+the backend url will be `http://xxx.xxx.xxx.xxx:3000`.
+
 [localhost]: http://localhost:3000
 [getrecipes]: http://localhost:3000/recipes
 
@@ -35,17 +39,17 @@ running correctly.
 
 These are the available endpoints
 
-1. `GET localhost:3000/recipes`
+1. `GET /recipes`
    - Returns the list of stored recipes
-2. `POST localhost:3000/recipes`
+2. `POST /recipes`
    - Store a recipe in the backend
-3. `GET localhost:3000/recipes/:id`
+3. `GET /recipes/:id`
    - Retrieve a specific recipe
-4. `PUT localhost:3000/recipes/:id`
+4. `PUT /recipes/:id`
    - Update a specific recipe
-5. `DELETE localhost:3000/recipes/:id`
+5. `DELETE /recipes/:id`
    - Delete a recipe
-6. `GET localhost:3000/reset`
+6. `GET /reset`
    - Development endpoint to reset the database to its original state
 
 You can find them defined in `endpoints.js`.

@@ -28,9 +28,8 @@ The backend will be serving requests from [localhost][], port 3000. You can
 visit [this link][getrecipes] in your browser to verify that it is up and
 running correctly.
 
-When building a mobile app client, the backend url will be the IP address
-of the hosting computer. When the phone is connected to the same network,
-the backend url will be `http://xxx.xxx.xxx.xxx:3000`.
+When building a mobile app client, you will need to use your local ip address
+instead of localhost, eg `http://192.168.0.11:3000`.
 
 [localhost]: http://localhost:3000
 [getrecipes]: http://localhost:3000/recipes
